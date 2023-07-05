@@ -1,0 +1,116 @@
+.callBack {
+  width: 50px;
+  height: 60px;
+  background: linear-gradient(
+    186.85deg,
+    #003366 16.59%,
+    rgba(0, 51, 102, 0) 147.03%,
+    #003366 147.03%
+  );
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+}
+.callBack img {
+  width: 23px;
+  cursor: pointer;
+}
+.formCallBack {
+  background: #fff;
+
+  position: absolute;
+  left: 50px;
+  top: 0;
+}
+.formCallBack {
+  -webkit-transition: max-width 1s;
+  -moz-transition: max-width 1s;
+  -ms-transition: max-width 1s;
+  -o-transition: max-width 1s;
+  transition: max-width 1s;
+  -webkit-transition: padding 0.1s;
+  -moz-transition: padding 0.1s;
+  -ms-transition: padding 0.1s;
+  -o-transition: padding 0.1s;
+  transition: padding 0.1s;
+  overflow: hidden;
+  max-width: 0;
+  padding: 0;
+}
+.formCallBack.active {
+  -webkit-transition: max-width 1s;
+  -moz-transition: max-width 1s;
+  -ms-transition: max-width 1s;
+  -o-transition: max-width 1s;
+  transition: max-width 1s;
+  -webkit-transition: padding 0.1s;
+  -moz-transition: padding 0.1s;
+  -ms-transition: padding 0.1s;
+  -o-transition: padding 0.1s;
+  transition: padding 0.1s;
+  overflow: hidden;
+  max-width: 270px;
+  padding: 16px;
+}
+.formCallBack label {
+  color: #3d3d3d;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+}
+.formCallBack input {
+  border-radius: 5px;
+  border: 0.5px solid var(--shadow, #d8d8d8);
+  background: #fff;
+  padding: 10px;
+}
+.code {
+  width: 100px;
+  position: relative;
+}
+.arrowCode {
+  position: absolute;
+  top: 14px;
+  z-index: 100;
+  right: 5px;
+  cursor: pointer;
+}
+
+#select-code + .ts-wrapper.single .ts-control {
+  padding: 17.2px 10px !important;
+  border-radius: 10px 0 0 10px !important;
+  border-right: 0;
+}
+.number {
+  flex: 1;
+}
+.number input[type="number"] {
+  padding: 17px 8px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 0 10px 10px 0;
+  width: 91%;
+}
+.boweredBy {
+  margin: -6px 0 0 0;
+}
+.boweredBy img {
+}
+
+.callBackSection {
+  position: fixed;
+  top: 8%;
+  left: 0;
+  z-index: 1000;
+  /* overflow: hidden; */
+}
+@media only screen and (min-width: 768px) {
+  .boweredBy {
+    margin: 0 0 -75px 0;
+  }
+  .callBackSection {
+    position: fixed;
+    top: 7%;
+    left: 0;
+  }
+}

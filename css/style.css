@@ -1472,6 +1472,7 @@ div#accordionExample {
 }
 .ImageOffer {
   position: relative;
+  overflow: hidden;
 }
 .ImageOffer .layoutOffer {
   position: absolute;
@@ -1486,12 +1487,32 @@ div#accordionExample {
     ),
     url(.jpg);
   filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
+  transition: ease-in 0.3s;
 }
+
 .ImageOffer .contentOffer {
   position: absolute;
-  top: 77%;
+  top: 99%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: ease-in 0.3s;
+}
+.splide__slide.is-visible.is-active .ImageOffer .contentOffer {
+  top: 93%;
+}
+.splide__slide.is-visible.is-active:hover .ImageOffer .contentOffer {
+  top: 50%;
+}
+.splide__slide.is-visible.is-active:hover .ImageOffer .reateOffer {
+  /* display: none !important; */
+  height: 114px;
+}
+.splide__slide.is-visible.is-active:hover .ImageOffer .layoutOffer {
+  background: linear-gradient(
+    38deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 .ImageOffer .contentOffer .buttonOffer .buttonViewMore {
   background: #ffffff;
@@ -1521,6 +1542,7 @@ div#accordionExample {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: height ease-in 0.3s;
 }
 .ImageOffer .reateOffer span {
   font-family: "Nekolina";
